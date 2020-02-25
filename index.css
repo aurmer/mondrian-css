@@ -1,0 +1,124 @@
+body {
+  background-color: #111;
+}
+
+.gallery {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exhibit {
+  width: 80vw;
+  background-color: #888;
+}
+
+.painting {
+  display:flex;
+  margin: 1vw;
+  background-color: #888;
+}
+
+.painting * {
+  display: flex;
+}
+
+.section.s1 {
+  width: 26vw;
+  height: 48.5vw;
+  flex-direction: column;
+}
+
+.section.s1-1 {
+  width: 100%;
+  height: 4.1vw;
+}
+
+.section.s1-2 {
+  width: 100%;
+  height: 38.5vw;
+  flex-flow: column wrap;
+}
+
+.section.s1-3 {
+  width: 100%;
+  height: 5.3vw;
+}
+
+.section.s1-2-1 {
+  margin: 0;
+  flex-flow: column wrap;
+  height: 38.2vw;
+}
+
+.section.s1-2-2 {
+  flex-flow: column wrap;
+  height: 19vw;
+}
+
+.section.s1-2-2-1 {
+  height: 4vw;
+}
+
+.section.s2 {
+  width: 12.5vw;
+  height: 48.5vw;
+  background-color: red;
+}
+
+.section.s3 {
+  width: 12.5vw;
+  height: 48.5vw;
+}
+
+/* .section.s4 {
+  width: 24.6vw;
+  height: 46vw;
+} */
+
+.tile {
+  /* margin: 1vw; */
+  filter: drop-shadow(.2vw .2vw .2vw #111);
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.white {
+  background-color: white;
+}
+
+.tile.mt, .section.mt {
+  margin-top: .3vw;
+}
+
+.tile.mr, .section.mr {
+  margin-right: .3vw;
+}
+
+.tile.mb, .section.mb {
+  margin-bottom: .3vw;
+}
+
+.tile.ml, .section.ml {
+  margin-left: .3vw;
+}
+
+.tile.mf, .section.mf {
+  margin: .3vw;
+}
