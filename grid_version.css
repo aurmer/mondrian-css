@@ -1,0 +1,75 @@
+body {
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.exhibit {
+  box-sizing: border-box;
+  font-size: 1vw;
+  width: 90vw;
+  max-width: 1600px;
+  height: 56vw;
+  max-height: 1000px;
+  background-color: #444;
+  padding: 1.3em;
+}
+
+@media screen and (min-width: 1600px) {
+  .exhibit {
+    font-size: .8em;
+  }
+}
+
+.painting {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 108fr 45fr 108fr 76fr 76fr 108fr 108fr 108fr 108fr 76fr 76fr 110fr 45fr 108fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "t01 t01 t02 t02 t02 t03 t03 t04 t04 t05 t06 t07 t07 t07"
+    "t08 t09 t09 t09 t09 t10 t10 t04 t04 t11 t11 t12 t12 t13"
+    "t08 t09 t09 t09 t09 t10 t10 t14 t14 t15 t15 t12 t12 t13"
+    "t16 t09 t09 t09 t09 t17 t18 t14 t14 t19 t19 t20 t20 t13"
+    "t16 t09 t09 t09 t09 t17 t18 t21 t21 t22 t22 t20 t20 t23"
+    "t16 t24 t24 t25 t25 t26 t26 t27 t28 t29 t29 t29 t29 t23"
+    "t30 t24 t24 t31 t31 t32 t32 t27 t28 t29 t29 t29 t29 t23"
+    "t30 t33 t33 t34 t34 t32 t32 t35 t35 t29 t29 t29 t29 t36"
+    "t30 t33 t33 t37 t38 t39 t39 t35 t35 t29 t29 t29 t29 t36"
+    "t40 t40 t40 t37 t38 t39 t39 t41 t42 t43 t43 t43 t44 t44";
+  grid-gap: .7vw;
+  background-color: #444;
+}
+
+.tile {
+  filter: drop-shadow(.3em .3em .2em #000);
+}
+
+.red {
+  background-color: #f50f0f;
+}
+
+.blu {
+  background-color: #0d7fbe;
+}
+
+.blk {
+  background-color: black;
+}
+
+.ylw {
+  background-color: #fae317;
+}
+
+.wht {
+  background-color: white;
+}
